@@ -1,6 +1,27 @@
 Applications:
     jiangtun:
         app_types:
-            - jiangtunApp
+            - jiangtun
         content_directory: ${ROOT_DIR}/doc/content
+        remove:
+            - ${MOOSE_DIR}/framework/doc/remove.yml
         log_default: WARNING
+        show_warning: false
+
+Documents:
+    software_requirements_specification: sqa/jiangtun_srs.md
+    software_design_description: sqa/jiangtun_sdd.md
+    software_test_plan: sqa/jiangtun_stp.md
+    requirements_traceability_matrix: sqa/jiangtun_rtm.md
+    verification_validation_report: sqa/jiangtun_vvr.md
+    failure_analysis_report: sqa/jiangtun_far.md
+    software_library_list: sqa/jiangtun_sll.md
+    log_default: WARNING
+    show_warning: false
+
+Requirements:
+    jiangtun:
+        directories:
+            - ${ROOT_DIR}/test
+        log_default: WARNING
+        show_warning: false
