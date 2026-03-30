@@ -7,7 +7,8 @@ InputParameters
 TJ2PhaseMaterial::validParams()
 {
   InputParameters params = Material::validParams();
-  params.addClassDescription("Material for two-grain single-phase-field model based on Steinbach Acta 2020 isotropic reduction.");
+  params.addClassDescription("Material for two-grain single-phase-field model based on Steinbach "
+                             "Acta 2020 isotropic reduction.");
 
   params.addRequiredParam<Real>("sigma", "Isotropic grain boundary energy sigma");
   params.addRequiredParam<Real>("mobility", "Isotropic grain boundary mobility m");
